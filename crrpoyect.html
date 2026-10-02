@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Sitio Web - Cristiano Ronaldo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* ==================== CABECERAS ==================== */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            min-height: 250px;
+        }
+
+        .header-inicio {
+            background-color: #4e5358;
+        }
+
+        .header-servicios {
+            background-color: #0a69c8;
+        }
+
+        .header-contacto {
+            background-color: #dc0b0b;
+        }
+
+        .contenido-header {
+            flex: 1;
+        }
+
+        .contenido-header h1 {
+            margin: 0 0 10px 0;
+        }
+
+        .contenido-header nav {
+            margin-bottom: 15px;
+        }
+
+        /* ==================== IMÁGENES ==================== */
+
+        .logo-pequeno {
+            width: 350px;
+            max-width: 40%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* ==================== ANUNCIO ==================== */
+
+        .anuncio {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* ==================== NAVEGACIÓN ==================== */
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(68, 51, 51);
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(4, 140, 251);
+            color: white;
+        }
+
+        /* ==================== CONTENIDO ==================== */
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        aside h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        section {
+            width: 75%;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ==================== SECCIONES ==================== */
+
+        .pagina {
+            display: none;
+        }
+
+        .pagina.activa {
+            display: block;
+        }
+
+        .pagina article {
+            min-height: 200px;
+        }
+
+        /* ==================== PIE DE PÁGINA ==================== */
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .logo-pequeno {
+                max-width: 100%;
+                width: 300px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            aside,
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================================================
+         INICIO
+    ================================================== -->
+
+    <div id="inicio" class="pagina activa">
+
+        <header class="header-inicio">
+
+            <div class="contenido-header">
+
+                <h1>Epoca de CR7</h1>
+
+                <nav>Momentos destacados</nav>
+
+                <div class="barra-navegacion">
+                    <a href="#inicio" class="boton-nav">Madrid 2018</a>
+                    <a href="#servicios" class="boton-nav">cr7 chilena</a>
+                    <a href="#contacto" class="boton-nav">manchester united</a>
+                </div>
+
+            </div>
+
+            <img
+                src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/8B70/production/_102469653_gettyimages-962792890.jpg.webp"
+                alt="Cristiano Ronaldo"
+                class="logo-pequeno">
+
+        </header>
+
+
+        <main>
+
+            <!-- BARRA LATERAL CON ANUNCIO -->
+            <aside>
+
+                <h3>Anuncio</h3>
+
+                <img
+                    src="https://www.coca-cola.com/content/dam/onexp/do/es/brands/sprite/caribe_republica_dominicana_multibrand_digital_sprite_banners_864x1536px_esp.jpg/width1960.jpg"
+                    alt="Anuncio de Sprite"
+                    class="anuncio">
+
+            </aside>
+
+
+            <section>
+
+                <article>
+
+                    <h2>3ERA CHAMPIONS CONSECUTIVA</h2>
+
+                    <p>
+                        Ganó 4 Champions Cristiano Ronaldo con el Madrid
+                        y 3 fueron consecutivas, una hazaña jamás vista
+                        e imposible de repetir.
+                    </p>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ==================================================
+         SERVICIOS
+    ================================================== -->
+
+    <div id="servicios" class="pagina">
+
+        <header class="header-servicios">
+
+            <div class="contenido-header">
+
+                <h1>Chilena 2018</h1>
+
+                <nav>Madrid vs Juventus</nav>
+
+                <div class="barra-navegacion">
+                    <a href="#inicio" class="boton-nav">Madrid 2018</a>
+                    <a href="#servicios" class="boton-nav">cr7 chilena</a>
+                    <a href="#contacto" class="boton-nav">Manchester united</a>
+                </div>
+
+            </div>
+
+            <img
+                src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/10413/production/_100697566_hi045932006.jpg.webp"
+                alt="Cristiano Ronaldo"
+                class="logo-pequeno">
+
+        </header>
+
+
+        <main>
+
+            <!-- BARRA LATERAL CON ANUNCIO -->
+            <aside>
+
+                <h3>Anuncio</h3>
+
+                <img
+                    src="https://www.coca-cola.com/content/dam/onexp/do/es/brands/sprite/caribe_republica_dominicana_multibrand_digital_sprite_banners_864x1536px_esp.jpg/width1960.jpg"
+                    alt="Anuncio de Sprite"
+                    class="anuncio">
+
+            </aside>
+
+
+            <section>
+
+                <article>
+
+                    <h2>CRISTIANO CHILENA</h2>
+
+                    <p>
+                        Aquel remate acrobático tras un centro de Dani Carvajal alcanzó una impacto espectacular: Cristiano se elevó a una altura aproximada de 2.38 metros (con el cuerpo suspendido en paralelo al césped a casi 1.41 metros), dejando inmóvil al emblemático arquero Gianluigi Buffon. La ejecución fue tan perfecta que los propios aficionados de la Juventus se pusieron de pie para ovacionarlo, un gesto histórico que meses después influiría en su fichaje por el club italiano. Dicha obra de arte fue galardonada como el Gol de la Temporada de la UEFA.
+                    </p>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ==================================================
+         CONTACTO
+    ================================================== -->
+
+    <div id="contacto" class="pagina">
+
+        <header class="header-contacto">
+
+            <div class="contenido-header">
+
+                <h1>Manchester united 2008</h1>
+
+                <nav>Primera champions league</nav>
+
+                <div class="barra-navegacion">
+                    <a href="#inicio" class="boton-nav">Madrid 2018</a>
+                    <a href="#servicios" class="boton-nav">cr7 chilena</a>
+                    <a href="#contacto" class="boton-nav">manchester united</a>
+                </div>
+
+            </div>
+
+            <img
+                src="https://www.shutterstock.com/editorial/image-editorial/O8D4U812M0TaU64dNDQzNw==/cristiano-ronaldo-manchester-united-celebrates-champions-league-440nw-8493378ig.jpg"
+                alt="Cristiano Ronaldo"
+                class="logo-pequeno">
+
+        </header>
+
+
+        <main>
+
+            <!-- BARRA LATERAL CON ANUNCIO -->
+            <aside>
+
+                <h3>Anuncio</h3>
+
+                <img
+                    src="https://www.coca-cola.com/content/dam/onexp/do/es/brands/sprite/caribe_republica_dominicana_multibrand_digital_sprite_banners_864x1536px_esp.jpg/width1960.jpg"
+                    alt="Anuncio de Sprite"
+                    class="anuncio">
+
+            </aside>
+
+
+            <section>
+
+                <article>
+
+                    <h2>FINAL 21 DE MAYO 2008</h2>
+
+                    <p>
+                         El partido terminó 1-1 en el tiempo reglamentario (con un gol de cabeza del propio Cristiano Ronaldo) y se definó en tanda de penales. A pesar de que CR7 falló su cobro desde los doce pasos, el United se impuso por 6-5 para levantar el trofeo
+                    </p>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- ==================================================
+         PIE DE PÁGINA
+    ================================================== -->
+
+    <footer>
+
+        <p>Pie de página</p>
+
+    </footer>
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+         CAMBIO ENTRE LAS 3 SECCIONES
+    ================================================== -->
+
+    <script>
+
+        function mostrarPagina() {
+
+            let pagina = window.location.hash.substring(1);
+
+            if (pagina === "") {
+                pagina = "inicio";
+            }
+
+            const paginas = document.querySelectorAll(".pagina");
+
+            paginas.forEach(function(elemento) {
+                elemento.classList.remove("activa");
+            });
+
+            const paginaSeleccionada =
+                document.getElementById(pagina);
+
+            if (paginaSeleccionada) {
+
+                paginaSeleccionada.classList.add("activa");
+
+            } else {
+
+                document
+                    .getElementById("inicio")
+                    .classList.add("activa");
+
+            }
+        }
+
+        window.addEventListener("load", mostrarPagina);
+
+        window.addEventListener("hashchange", mostrarPagina);
+
+    </script>
+
+</body>
+
+</html>
